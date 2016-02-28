@@ -6,11 +6,39 @@
     <title>Piper Lyons</title>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            background-color: white;
+        }
+        
+        .parallax-container {
+            height: "your height here";
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Piper Lyons's Website</h1>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="Northern Lights.jpg"></div>
+    </div>
+    </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
     <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function(){
+      $('.parallax').parallax();
+      function resize(){
+          $(".parallax-container").height(window.innerheight-$("#header").height());
+      }
+      resize();
+      $(document).resize(resize);
+    });
+    </script>
 </body>
 
 </html>
