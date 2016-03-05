@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Newspaper History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: white;
+        }
+        
+        body {
+            margin-top: 90px;
+        }
+        
+        #yolo {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>A History of Newspapers</h1>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="ChronocleParralax.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Timeline</h2>
+            <p class="grey-text text-darken-3 lighten-3">There
+                <br /> will
+                <br /> be
+                <br /> a
+                <br /> svg
+                <br /> timeline
+                <br /> here
+                <br />soon</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class=“parallax”>
+            <img id="yolo" src="minorities.jpg">
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Timeline</h2>
+            <p class="grey-text text-darken-3 lighten-3">There
+                <br /> will
+                <br /> be
+                <br /> a
+                <br /> svg
+                <br /> timeline
+                <br /> here
+                <br />soon</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function(){
+      $('.parallax').parallax();
+      function resize(){
+          $(".parallax-container").height(window.innerheight-$("#header").height());
+      }
+      resize();
+      $(document).resize(resize);
+    });
+    </script>
+</body>
