@@ -16,37 +16,34 @@
         .parallax-container {
             height: "50px";
         }
-        
-        .title {
-            
-        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class="title">Piper Lyons's Website</h1>
+        <h1 class="container">Piper Lyons's Website</h1>
     </header>
     <div class="parallax-container">
         <div class="parallax"><img src="parallax.jpg"></div>
     </div>
     <div class="section white">
-    <div class="row container">
-      <h2 class="header">Some of my projects</h2>
-      <p class="grey-text text-darken-3 lighten-3">I have one which is <a href="newspaperhistory/newspaperhistory.html">A History of Newspapers</a>. I am currently working on putting a svg timeline in this project</p>
+        <div class="row container">
+            <h2 class="header">Some of my projects</h2>
+            <p class="grey-text text-darken-3 lighten-3">I have one which is <a href="newspaperhistory/index.html">A History of Newspapers</a>. I am currently working on adding some content in the graph thing.</p>
+        </div>
     </div>
-  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
     <script src="js/materialize.js "></script>
     <script>
-        $(document).ready(function(){
-      $('.parallax').parallax();
-      function resize(){
-          $(".parallax-container").height(window.innerheight-$("#header").height());
-      }
-      resize();
-      $(document).resize(resize);
-    });
+        $(document).ready(function () {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+        });
     </script>
 </body>
 

@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
     <script src="d3.js"></script>
     <script src="d3plus.js"></script>
@@ -22,26 +23,23 @@
             z-index: 10;
         }
         
-        body {
-            margin-top: 90px;
-        }
-        
         #yolo {
             width: 100%;
-        }
-        
-        timeline {
-            margin: 10%;
         }
     </style>
 </head>
 
 <body>
-    <div id="header">
-        <header>
-            <h1>A History of Newspapers</h1>
-        </header>
-    </div>
+    <nav>
+        <div class="nav-wrapper grey lighten-2 header">
+            <a href="index.html" style="margin-left: 20px;" class="brand-logo grey-text text-darken-4">History of Newspapers</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="grey-text text-darken-4" style="margin-right: 20px;" href="types.html">Types</a></li>
+                <!--<li><a class="grey-text text-darken-4" href="badges.html">Components</a></li>
+                <li><a class="grey-text text-darken-4" href="collapsible.html">JavaScript</a></li>-->
+            </ul>
+        </div>
+    </nav>
     <div class="parallax-container">
         <div class="parallax"><img src="chronicle.jpg"></div>
     </div>
@@ -57,22 +55,6 @@
     <div class="parallax-container">
         <div class=“parallax”>
             <img id="yolo" src="minorities.jpg">
-        </div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header">Timeline</h2>
-            <div>
-                <div id="yo"></div>
-                <p class="grey-text text-darken-3 lighten-3">There
-                    <br /> will
-                    <br /> be
-                    <br /> a
-                    <br /> svg
-                    <br /> timeline
-                    <br /> here
-                    <br />soon</p>
-            </div>
         </div>
     </div>
     <script>
