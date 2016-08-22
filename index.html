@@ -10,19 +10,21 @@
         header {
             width: 100%;
             top: 0;
+            height: 100px;
+            position: fixed;
             background-color: white;
         }
-
-        .parallax-container {
-            height: "50px";
+        #logo {
+          height: 100px;
+          margin-left: 8px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png">
-    </header>
+  <header>
+    <img id="logo" src="images/logo.png">
+  </header>
     <div class="parallax-container">
         <div class="parallax"><img src="images/parallax.jpg"></div>
     </div>
