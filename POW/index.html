@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Piper Lyons</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            height: 100px;
+            background-color: white;
+        }
+
+        #logo {
+            height: 100px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="white grey-text">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Penny Wars</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="solution.html">Solution</a></li>
+                    <li><a href="extension1.html">Extension 1</a></li>
+                    <li><a href="extension2.html">Extension 2</a></li>
+                    <li><a href="extension4.html">Extension 4</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/Pennies.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+        });
+    </script>
+</body>
+
+</html>
