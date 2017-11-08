@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Penny Wars</title>
+    <link rel="shortcut icon" href="images/Pennies.jpg">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            height: 100px;
+            background-color: white;
+        }
+
+        #logo {
+            height: 100px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper indigo darken-4 grey-text">
+                <a href="index.html" class="brand-logo active" style="margin-left: 15px;">Penny Wars</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="solution.html">Solution</a></li>
+                    <li><a href="extension1.html">Extension 1</a></li>
+                    <li><a href="extension2.html">Extension 2</a></li>
+                    <li><a href="extension4.html">Extension 4</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row container">
+        <h2>Solution</h2>
+        <p>The first step in solving this problem was writing a variable equation. So to write the variable equation first we write a let statement</p>
+        <blockquote>let x = amount of pennies at the start</blockquote>
+        <p>then, go through what she is giving away and what she is keeping, first, she gives half away and ends up with half of the total</p>
+        <blockquote>½x</blockquote>
+        <p>And gives 2 more away</p>
+        <blockquote>½x-2</blockquote>
+        <p>Halves again</p>
+        <blockquote>½(½x-2)</blockquote>
+        <p>Gives away 2 more</p>
+        <blockquote>½(½x-2)-2</blockquote>
+        <p>Halves for the last time</p>
+        <blockquote>½[½(½x-2)-2]</blockquote>
+        <p>Takes 2 more away</p>
+        <blockquote>½[½(½x-2)-2]-2</blockquote>
+        <p>And ends with 2</p>
+        <blockquote>½[½(½x-2)-2]-2=2</blockquote>
+        <p>Once we had the variable equation we had to solve it, first by distributing the innermost parenthesis</p>
+        <blockquote>½[¼x-1-2]-2=2</blockquote>
+        <p>Then finish distributing</p>
+        <blockquote>⅛x-½-1-2=2</blockquote>
+        <p>Combine like terms</p>
+        <blockquote>⅛x-3½=2</blockquote>
+        <p>Then we used the property of equality to start to isolate the variable</p>
+        <blockquote>⅛x=5½</blockquote>
+        <p>And finished off the isolation</p>
+        <blockquote>x=5½÷⅛</blockquote>
+        <p>Now is where we used our knowledge of multiplying and dividing fractions (you can multiply the reciprocal of the divisor in a division problem, and the reciprocal of either monomial in a product to become the divisor)</p>
+        <blockquote>x=5½•8</blockquote>
+        <p>Now we made them improper fractions</p>
+        <blockquote>x=11/2•8/1</blockquote>
+        <p>Then cross simplified</p>
+        <blockquote>x=11•4</blockquote>
+        <p>Finally multiplied</p>
+        <blockquote>x=44</blockquote>
+        <p>And we wrote in the unit</p>
+        <blockquote>44 pennies</blockquote>
+        <p>And we had found the answer!</p>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+
+</html>
