@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Penny Wars</title>
+    <link rel="shortcut icon" href="images/Pennies.jpg">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            height: 100px;
+            background-color: white;
+        }
+
+        #logo {
+            height: 100px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper indigo darken-4 grey-text">
+                <a href="index.html" class="brand-logo active" style="margin-left: 15px;">Penny Wars</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="solution.html">Solution</a></li>
+                    <li><a href="extension1.html">Extension 1</a></li>
+                    <li><a href="extension2.html">Extension 2</a></li>
+                    <li><a href="extension4.html">Extension 4</a></li>
+                    <li class="active"><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row container">
+        <h2>Reflection</h2>
+        <p>This was a surprisingly easy POW compared to the ones we had in 6th grade, which took at least 2 days of working
+          after school for a while, but it was still a fun process, and I enjoyed having some prompted extensions. One thing that made
+          it easy is that we were all able to solve it in class, in contrast to the 2 days last year, one thing that made this problem
+          fun was that there were a lot of steps that had to be taken, so then it was more challenging than a problem that would be
+          in a worksheet, and I really liked the extensions because they require critical thinking and an imaginative mind 
+          to get them which is fun and challenging, I did attempt the 2nd and the 3rd extensions, but I wasn’t able to solve them.</p>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+
+</html>

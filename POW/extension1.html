@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Penny Wars</title>
+    <link rel="shortcut icon" href="images/Pennies.jpg">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            height: 100px;
+            background-color: white;
+        }
+
+        #logo {
+            height: 100px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper indigo darken-4 grey-text">
+                <a href="index.html" class="brand-logo active" style="margin-left: 15px;">Penny Wars</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="solution.html">Solution</a></li>
+                    <li class="active"><a href="extension1.html">Extension 1</a></li>
+                    <li><a href="extension2.html">Extension 2</a></li>
+                    <li><a href="extension4.html">Extension 4</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row container">
+        <h2>Extension 1</h2>
+        <p>For the first extension, we just took the let statement and the fully simplified equation (⅛x-3½=2) and replaced the 2 with a four and solved from there. The steps were:
+            <br />Isolate the variable by using the property of equality</p>
+        <blockquote>⅛x=7½</blockquote>
+        <p>Continue isolating the variable</p>
+        <blockquote>x=7½÷⅛</blockquote>
+        <p>Multiply with the reciprocal</p>
+        <blockquote>x=15/2•8/1</blockquote>
+        <p>Cross simplify</p>
+        <blockquote>x=15•4</blockquote>
+        <p>Multiply</p>
+        <blockquote>x=60</blockquote>
+        <p>Remove variable and add unit</p>
+        <blockquote>60 pennies</blockquote>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+
+</html>
