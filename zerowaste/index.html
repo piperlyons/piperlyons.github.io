@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Piper Lyons</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            height: 100px;
+            background-color: white;
+        }
+
+        #logo {
+            height: 100px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="white grey-text">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img id="logo" src="images/logo.png"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!--<li><a href="Casti Schedule/index.html">Schedule</a></li>-->
+                    <li><a href="newspaperhistory/index.html">Newspaper History</a></li>
+                    <!--<li><a href="collapsible.html">JavaScript</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header"><i></i> <br /> Some of my projects</h2>
+            <p class="grey-text text-darken-3 lighten-3">I have one which is <a href="newspaperhistory/index.html">A History of Newspapers</a>. I am currently working on it.</p>
+            <!--<p class="grey-text text-darken-3 lighten-3">I have another one which is <a href="Casti Schedule/index.html">A Schedule</a>. I am currently working on it.</p>-->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+
+            function resize() {
+                $(".parallax-container").height(window.innerheight - $("#header").height());
+            }
+            resize();
+            $(document).resize(resize);
+        });
+    </script>
+</body>
+
+</html>
