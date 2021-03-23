@@ -15,42 +15,27 @@
 
 <body>
     <header>
-        <!--<ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-        </ul>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <!-- Dropdown Trigger
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-            </div>
-        </nav>-->
+
         <nav class="light-green green-text text-darken-4">
             <div class="nav-wrapper">
                 <a href="index.html" class="brand-logo green-text text-darken-4 hello"><!--<h4>Lyons Family Waste Plan</h4>--><img height="50" src="images/logo.png"></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a  class="light-green green-text text-darken-4" href="schedule.html">Schedule</a></li>
-                    <li><a  class="light-green green-text text-darken-4" href="budget.html">Budget</a></li>
-                    <li><a  class="light-green green-text text-darken-4" href="information.html">Information</a></li>
+                    <li><a class="green-text text-darken-4" href="schedule.html">Schedule</a></li>
+                    <li><a class="green-text text-darken-4" href="budget.html">Budget</a></li>
+                    <li class=""><a class="green-text text-darken-4" href="information.html">Information</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="parallax-container">
-        <div class="parallax"><img src="images/home.jpg"></div>
+        <div class="parallax"><img src="images/kitchen.jpg"></div>
     </div>
     <div class="section white">
         <div class="row container">
-            <h4 class="header center">What is this?</h4>
-            <p class="center">This is a place for the Lyons Family to find the necessary materials for our family's plan to reduce (and hopefully even eliminate) waste.</p>
-            <!--<p class="grey-text text-darken-3 lighten-3">I have another one which is <a href="Casti Schedule/index.html">A Schedule</a>. I am currently working on it.</p>-->
+            <h4 class="header center">Kitchen Changes & Information</h4>
+            <p class="center">Information for making our kitchen as waste free as possible.</p>
+            <h5>Cupcake Liners</h5>
+            <p>This is a small one, but we can get <a class="link" href="http://amzn.to/2y39C70">these</a> liners that are reusable.</p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js "></script>
@@ -64,7 +49,9 @@
             }
             resize();
             $(document).resize(resize);
-            $(".dropdown-trigger").dropdown({ hover: false });
+            $(".dropdown-trigger").dropdown({
+                hover: false
+            });
         });
     </script>
 </body>
